@@ -1,5 +1,4 @@
 import sys
-import time
 from typing import Dict, List, Tuple, Set
 
 from utils.parse_arges import _die
@@ -58,8 +57,6 @@ def render_maze(
                 row += _PAT_CLR + "▓▓▓" + rs
             elif show_path and (x, y) in path_cells:
                 row += _PATH_CLR + " · " + rs
-            # elif (x, y) == getattr(gen, "current", None):
-            #     row += "\033[92m" + _BOLD + " ● " + rs   # 🟢 current cell
             else:
                 row += "   "
         row += (wc + "|" + rs) if (grid[y][w - 1] & Direction.EAST) else " "
@@ -144,8 +141,7 @@ def interactive_loop(params: Dict, gen: MazeGenerator) -> None:
             break
 
         if choice == "1":
-            new_seed = int(time.time() * 1000) % (2**31)
-            params = {**params, "seed": new_seed}
+            params = {**params}
             gen = make_generator(params)
 
             if not gen.pattern_placed:

@@ -14,7 +14,6 @@ def main() -> None:
 
     raw_config = parse_args(sys.argv[1])
     params = validate_config(raw_config)
-
     gen = make_generator(params)
 
     if not gen.pattern_placed:
