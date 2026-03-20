@@ -257,9 +257,8 @@ has_east_wall  = bool(cell & EAST)
 
 | Team member | Responsibilities                                                |
 | ----------- | --------------------------------------------------------------- |
-| \<login1\>  | Maze generation algorithm, BFS path-finding, pip package setup  |
-| \<login2\>  | Terminal renderer, interactive loop, ANSI colour system         |
-| \<login3\>  | Config parser & validator, output file writer, Makefile, README |
+| \<Ivan\>  | Maze generation algorithm, BFS path-finding, pip package setup  |
+| \<khalid\>  | Terminal renderer, interactive loop, ANSI colour system Config parser & validator, output file writer, Makefile, README |
 
 ### Planning
 
