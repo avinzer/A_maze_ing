@@ -18,7 +18,7 @@ OUTPUT_FILE=maze.txt
 PERFECT=True
 
 # Optional: fixed seed for reproducible mazes (comment out for random)
-SEED=42
+#SEED=42
 
 # Optional For the Bonus part animation
 ANIMATION=False
